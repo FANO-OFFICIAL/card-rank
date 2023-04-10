@@ -1,0 +1,86 @@
+body{
+	background-color: transparent;
+}
+.card {
+  width: 600px;
+  display: flex;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  align-items: center;
+  background-image: linear-gradient(to bottom left, #01004c, #650049);
+}
+.card__image image {
+  width: auto;
+  max-width: 100%;
+}
+.card__image img {
+  max-width: 100%;
+  width: auto;
+  border: 5px solid #000;
+  border-radius: 50%;
+}
+.card>* {
+  flex: 1;
+}
+.card__content {
+  flex: 4;
+  padding: 10px;
+}
+.card__content__top {
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 500;
+}
+.level {
+  color: #01d9f7;
+}
+
+.card__image {
+  padding: 10px;
+  position: relative;
+}
+.rank_number, .level_number  {
+  font-size: 32px;
+}
+.card__content__top > :not(:first-child) {
+  margin-left: 10px;
+}
+.bar, .progress {
+  height: 25px;
+}
+.progress {
+  border: 2px solid #000;
+  border-radius: 25px;
+  background-color: #484b4e;
+}
+.bar {
+  background-color: #01d9f7;
+  border-radius: 25px;
+  width: 95%;
+}
+.card__content__middle {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.card__content__middle span {
+  color: #7f8384;
+}
+.online {
+  width: 25px;
+  height: 25px;
+  background-color: #44b37f;
+  border-radius: 50%;
+  border: 3px solid #000;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
